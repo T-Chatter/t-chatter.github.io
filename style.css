@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+
+html {
+  background-color: #060407;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#github {
+  font-size: 2.5rem;
+}
+
+#github i {
+  color: #fff;
+  transition: all 150ms ease-out;
+}
+
+#github:hover i {
+  color: #9f3fac;
+}
+
+.title {
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 3em;
+  text-align: center;
+}
+
+.title-t {
+  font-weight: bold;
+}
+
+.title-3 {
+  font-size: 1.6em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.title-2 {
+  font-size: 1.75em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.title-container {
+  padding: 3rem 0;
+  background-color: #19111d;
+  margin: 0;
+}
+
+.download-container {
+  padding: 3rem 0;
+}
+
+.download-btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.download-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #a16bf5;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 150ms ease-out;
+}
+
+.download-btn:hover {
+  padding: 1rem 2.5rem;
+  background-color: #772ce8;
+}
+
+.download-btn:focus {
+  border: solid 2px #772ce8;
+  box-shadow: #772ce8 0px 0px 5px 1px;
+}
+
+.released-at {
+  margin-top: 0.25rem;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.released-name {
+  font-weight: bold;
+}
+
+.screenshot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.screenshot {
+  max-height: 60vh;
+  border: solid 2px #772ce899;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px 2px #060407;
+  margin: 1rem 0;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .screenshot-container {
+    flex-direction: row;
+  }
+}

@@ -3,10 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A Twitch chat client." />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/T-Chatter/T-Chatter/master/assets/tchatter-256x256.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/9948a4af37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>T-Chatter</title>
   </head>
   <body>
-    <h1>T-Chatter</h1>
+    <div class="navbar">
+      <div>
+        <h1 class="title"><span class="title-t">T</span>-Chatter</h1>
+      </div>
+      <div>
+        <a
+          href="https://github.com/T-Chatter/T-Chatter"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="title-container">
+      <h3 class="title-3">A Twtich chat client.</h3>
+      <div class="download-btn-container">
+        <a href="/" class="download-btn" id="download-btn-scroll">Download</a>
+      </div>
+      <div class="screenshot-container">
+        <img
+          src="./assets/T-Chatter_1.jpg"
+          alt="Screenshot 1"
+          class="screenshot"
+        />
+        <img
+          src="./assets/T-Chatter_3.jpg"
+          alt="Screenshot 3"
+          class="screenshot"
+        />
+        <img
+          src="./assets/T-Chatter_2.jpg"
+          alt="Screenshot 2"
+          class="screenshot"
+        />
+      </div>
+    </div>
+    <div class="download-container">
+      <h3 class="title-2">Download the latest version here</h3>
+      <div class="download-btn-container">
+        <a href="#" class="download-btn" id="download-btn">Loading...</a>
+      </div>
+      <p class="released-at">
+        <span class="released-name" id="release-name"></span>
+        <span class="released-at-date" id="release-date">Loading...</span>
+      </p>
+    </div>
+    <footer>&copy; 2020 T-Chatter</footer>
   </body>
   <script src="main.js"></script>
 </html>
