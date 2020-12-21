@@ -3,12 +3,18 @@ const docReady = () => {
     "https://api.github.com/repos/t-chatter/t-chatter/releases/latest"
   ).then(async (res) => {
     const response = await res.json();
-    const { browser_download_url, created_at, name } = response.assets[0];
+    const { created_at } = response.assets[0];
     const btn = document.getElementById("download-btn");
-    btn.innerText = `Download (v${response.tag_name})`;
-    btn.href = browser_download_url;
+    btn.innerText = `Download (${response.tag_name})`;
+    btn.href =
+      "https://github.com/T-Chatter/T-Chatter/releases/download/" +
+      response.tag_name +
+      "/T-Chatter-" +
+      response.tag_name.replace("v", "") +
+      ".exe";
     const nameEl = document.getElementById("release-name");
-    nameEl.innerText = name;
+    nameEl.innerText =
+      "T-Chatter-" + response.tag_name.replace("v", "") + ".exe";
     const dateEl = document.getElementById("release-date");
     dateEl.innerText = ` | ${new Date(created_at).toLocaleDateString()}`;
   });
