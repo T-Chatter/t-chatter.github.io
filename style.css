@@ -122,6 +122,16 @@ body {
   margin: 1rem 0;
 }
 
+.divider {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.changelog-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 footer {
   width: 100%;
   text-align: center;
@@ -131,5 +141,9 @@ footer {
 @media screen and (min-width: 1280px) {
   .screenshot-container {
     flex-direction: row;
+  }
+
+  .divider {
+    width: 75%;
   }
 }
